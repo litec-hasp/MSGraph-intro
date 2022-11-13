@@ -1,13 +1,20 @@
 # Microsoft Graph Introduction
 
-This repo uses reveal.js version 4.4.0 (see [reveal.js (github)](https://github.com/hakimel/reveal.js) for latest reveal.js tag).
-See [how to host reveal.js on github-pages](https://martinomensio.medium.com/how-to-host-reveal-js-slides-on-github-pages-and-have-a-tidy-repository-1a363944c38d) on how to update to a newer version.
+This repository trys to give an introdcution to Microsofts MS Graph API.
+
+Focus is on usage
+
+- of the REST API
+- with PowerShell
 
 ## Presentation
 
 Have a look at the demo github pages of this template repo: <https://litec-hasp.github.io/MSGraph-intro>.
 
-## Setup
+---
+## Additonal Information
+
+### Setup (Presentation)
 
 1. ~~Create a new github repo which uses this template.~~
    - ~~start with a public repo and change this to a private after complete setup~~
@@ -21,7 +28,10 @@ Have a look at the demo github pages of this template repo: <https://litec-hasp.
 
 For a detailed explanation see [pachanero-revealjs-template](https://github.com/pacharanero/create-new-revealjs-template).
 
-## Sources
+### Sources
+
+This repo uses reveal.js version 4.4.0 (see [reveal.js (github)](https://github.com/hakimel/reveal.js) for latest reveal.js tag).
+See [how to host reveal.js on github-pages](https://martinomensio.medium.com/how-to-host-reveal-js-slides-on-github-pages-and-have-a-tidy-repository-1a363944c38d) on how to update to a newer version.
 
 - [reveal.js](https://revealjs.com/)
 - [reveal.js (github)](https://github.com/hakimel/reveal.js)

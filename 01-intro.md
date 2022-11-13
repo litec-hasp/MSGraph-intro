@@ -50,8 +50,9 @@
 
 ---
 
-## Uisng MS Graph services
-### MS Graph REST API 
+## Using MS Graph services
+
+### MS Graph REST API
 
 Example - User Profile Call:
 

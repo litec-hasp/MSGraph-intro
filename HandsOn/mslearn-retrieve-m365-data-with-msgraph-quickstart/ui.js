@@ -31,4 +31,27 @@ async function displayProfilePhoto() {
     showPhotoButton.style = "display: none";
     var imgPhoto= document.getElementById('userPhoto');
     imgPhoto.style = "display: block";
+}
+
+var nextLink;
+async function displayEmail() {
+  var emails = await getEmails(nextLink);
+  if (!emails || emails.value.length < 1) {
+    return;
   }
+  nextLink = emails['@odata.nextLink'];
+
+  document.getElementById('displayEmail').style = 'display: none';
+
+  var emailsUl = document.getElementById('emails');
+  emails.value.forEach(email => {
+    var emailLi = document.createElement('li');
+    emailLi.innerText = `${email.subject} (${new Date(email.receivedDateTime).toLocaleString()})`;
+    emailsUl.appendChild(emailLi);
+  });
+  window.scrollTo({ top: emailsUl.scrollHeight, behavior: 'smooth' });
+
+  if (nextLink) {
+    document.getElementById('loadMoreContainer').style = 'display: block';
+  }
+}

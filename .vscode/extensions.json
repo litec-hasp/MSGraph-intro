@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "humao.rest-client",
+        "ritwickdey.liveserver",
+        "eliostruyf.vscode-msgraph-autocomplete"
+    ]
+}

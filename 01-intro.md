@@ -1,31 +1,82 @@
-# External Markdown
+# MS Graph
 
-## `<insert date here>`
-
------
-
-## 2nd page
-
-look down for nothing special
-
-Note: just a short note
+## Introduction
 
 ---
 
-## Up You Go
+## What is MS Graph?
 
-Math Example:
+> MS Graph is a secured, unified API to connect to data located in various Microsoft 365 services.
 
-`$$ J(\theta_0,\theta_1) = \sum_{i=0}^{10} a_i $$`
+- Just one API for different services
+- Main focus on developers
+- MS Graph REST API
+- Powershell implementation exists
+
+> :warning: It is NOT GraphQL or a graph based database!
+
+---
+
+## What Kind of Data can be Accessed?
+
+> Access to Azure / Active Directory / O365 / ...
+
+- Users and groups
+
+- Teams data
+- Tasks
+- Files
+- Mail
+- Meetings and calendars
+- Organizational charts
+
+<img src="https://learn.microsoft.com/en-us/training/m365-developer/msgraph-intro-overview/media/2-microsoft-graph.png" style="zoom:42%;margin-left:40px" />
+
+<small>Image Source: <https://learn.microsoft.com> </small>
+
+---
+
+## MS Graph Services
+
+- Centered on
+  - Users
+  - Groups
+- Support scenarios related to
+  - identity
+  - security
+  - productivity
+  - collaboration
+  - ...
+
+---
+
+## Uisng MS Graph services
+### MS Graph REST API 
+
+Example - User Profile Call:
+
+```sql
+GET /users/<name>@<tenant>.onmicrosoft.com
+```
+
+This will return a JSON Representation of the user profile.
+
+### MS Graph SDK and Client Libraries
+
+- For different programming languages, like
+  - C#
+  - Java
+  - Java Script / Type Script / Node.js
+  - PowerShell
+  - ...
 
 -----
 
-## Image Examples
+# Microsoft Graph Explorer
 
-### Link
+> :link: <https://developer.microsoft.com/graph/graph-explorer>
 
-![Github](https://pngimg.com/uploads/github/small/github_PNG67.png)
-
-### Local
-
-![LiTec-Logo](./img/LiTec-Logo.jpg)
+- web application
+- free, open-source tool
+- allows Graph REST API requests
+- for testing, prototyping

@@ -74,4 +74,12 @@ Authorization: Bearer EwAoA8l6BAAU ... 7PqHGsykYj7A0XqHCjbKKgWSkcAg==
   - application ID
   - tenant ID
 
+### Exercise
+
+See [MS Training - Register App](https://learn.microsoft.com/en-us/training/modules/msgraph-javascript-app/5-exercise-register-application)
+
 ---
+
+## Access Token Retrieval
+
+> See [MS Training - Access Token Retrieval](https://learn.microsoft.com/en-us/training/modules/msgraph-javascript-app/6-retrieve-access-token) and [MS Training - Token with MSAL](https://learn.microsoft.com/en-us/training/modules/msgraph-javascript-app/7-exercise-retrieve-access-token).

@@ -5,7 +5,7 @@ See [how to host reveal.js on github-pages](https://martinomensio.medium.com/how
 
 ## Presentation
 
-Have a look at the demo github pages of this template repo: <https://litec-hasp.github.io/msgraph-intro>.
+Have a look at the demo github pages of this template repo: <https://litec-hasp.github.io/MSGraph-intro>.
 
 ## Setup
 

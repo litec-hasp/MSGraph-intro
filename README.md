@@ -1,18 +1,16 @@
-# reveal.js-template
+# Microsoft Graph Introduction
 
-A template to generate [reveal.js](https://revealjs.com/) markdown presentation repositories with reaveal.js as submodule.
-
-This template uses reveal.js version 4.4.0 (see [reveal.js (github)](https://github.com/hakimel/reveal.js) for latest reveal.js tag).
+This repo uses reveal.js version 4.4.0 (see [reveal.js (github)](https://github.com/hakimel/reveal.js) for latest reveal.js tag).
 See [how to host reveal.js on github-pages](https://martinomensio.medium.com/how-to-host-reveal-js-slides-on-github-pages-and-have-a-tidy-repository-1a363944c38d) on how to update to a newer version.
 
-## Demo
+## Presentation
 
-Have a look at the demo github pages of this template repo: <https://litec-lectures.github.io/tmpl-reveal.js/>.
+Have a look at the demo github pages of this template repo: <https://litec-hasp.github.io/msgraph-intro>.
 
 ## Setup
 
-1. Create a new github repo which uses this template.
-   - start with a public repo and change this to a private after complete setup
+1. ~~Create a new github repo which uses this template.~~
+   - ~~start with a public repo and change this to a private after complete setup~~
 3. Activate github pages within this repository (see `Settings -> Pages`) - most of the time using the main branch is ok.
 4. If you clone the repo locally:
    1. Get the submodule files with `git submodule update --init --recursive`.

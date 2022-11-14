@@ -113,3 +113,17 @@ Disconnect-MgGraph
 ## Selection of Commands
 
 See [MS Training Graph PS Intro](https://learn.microsoft.com/en-us/training/modules/introduction-to-microsoft-graph-powershell/3-how-microsoft-graph-powershell-works)...
+
+### `Invoke-MgGraphRequest`
+
+- if A default command does not exist
+- allows any kind of REST API request
+
+```powershell
+$users = (Invoke-MgGraphRequest -Method GET https://graph.microsoft.com/v1.0/users).value
+```
+
+### Authentication
+
+See [MS Training - Authentication Cmdlets](https://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powershell-1.0)
+

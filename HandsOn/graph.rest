@@ -1,0 +1,27 @@
+# BEWARE! Only a few examples are working (you might need to recreate an ms dev account - azure ad test lab)
+# link to aadv2token info:
+# https://github.com/Huachao/vscode-restclient/pull/649
+# aadV2Token will open a browser and generate according token with permissions
+
+###  Minimal call
+GET https://graph.microsoft.com/v1.0/me
+Authorization: {{$aadV2Token scopes:User.Read}}
+
+### Call providing explicit tenantId
+### To get tenant-id: https://aad.portal.azure.com/ -> Azure AD -> Properties
+GET https://graph.microsoft.com/v1.0/me
+Authorization: {{$aadV2Token tenantId:1c52df0b-dc60-4e5e-a0da-47fa885780ab}}
+
+### Call providing scopes required to make the call
+GET https://graph.microsoft.com/v1.0/users
+Authorization: {{$aadV2Token scopes:User.Read.All }}
+
+### AppOnly calls with clientId and secret in the environment variables
+### (needs env variables and and configred azure ad app)
+GET https://graph.microsoft.com/v1.0/users/darrel@tavis.ca
+Authorization: {{$aadV2Token appOnly}}
+
+### Call providing scopes required to make the call bring your own clientId 
+### if you don't want to use the default
+GET https://graph.microsoft.com/v1.0/users
+Authorization: {{$aadV2Token scopes:User.Read.All clientId:c62ebf7c-c445-4b21-8f95-629ad5cd171b}}
